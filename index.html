@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haunted by Memories</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+  
+  <meta
+    name="description"
+    content="Haunted by Memories — a quiet digital space for timeless ghazals, late-night thoughts, nostalgia, memories and solitude."
+  />
+
+  <meta
+    name="keywords"
+    content="ghazals, old songs, memories, nostalgia, late night music, lonely vibes, Urdu ghazal, Hindi ghazal, haunted by memories"
+  />
+
+  <meta name="author" content="Aviii" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#080a0d" />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta
+    property="og:title"
+    content="Haunted by Memories"
+  />
+
+  <meta
+    property="og:description"
+    content="A quiet place for old songs, late-night memories and timeless ghazals."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <!-- Replace with your actual website URL -->
+  <meta
+    property="og:url"
+    content="https://yourwebsite.com/"
+  />
+
+  <!-- Replace with your actual preview image URL -->
+  <meta
+    property="og:image"
+    content="https://yourwebsite.com/assets/background.png"
+  />
+
+  <!-- Twitter / X -->
+ 
+
+  <meta
+    name="twitter:title"
+    content="Haunted by Memories"
+  />
+
+  <meta
+    name="twitter:description"
+    content="A quiet place for old songs, late-night memories and timeless ghazals."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://yourwebsite.com/assets/background.png"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="stylesheet" href="style.css" />
+<script>
+  // Disable right-click
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
+
+  // Disable dragging images/elements
+  document.addEventListener("dragstart", function (event) {
+    event.preventDefault();
+  });
+</script>
+</head>
+<body>
+  <main class="scene">
+    <div class="vignette"></div>
+    <div class="outside-window-motion" aria-hidden="true">
+      <div class="car car-a"><i class="car-body"></i><i class="headlight"></i></div>
+      <div class="car car-b"><i class="car-body"></i><i class="headlight"></i></div>
+      <div class="car car-c"><i class="car-body"></i><i class="headlight"></i></div>
+      <div class="street-light sl-a"></div>
+      <div class="street-light sl-b"></div>
+    </div>
+<header class="brand">
+      <span class="eyebrow">A quiet place for old songs</span>
+      <h1>Haunted by <em>Memories</em></h1>
+    </header>
+
+    <!-- Hidden YouTube player. Replace video IDs in app.js with your preferred songs. -->
+    <div id="youtube-player"></div>
+
+    <section class="player" aria-label="Music player">
+      <div class="track-meta">
+        <div class="vinyl"><span></span></div>
+        <div>
+          <p class="now-playing">NOW PLAYING</p>
+          <h2 id="trackTitle">A Timeless Ghazal</h2>
+          <p id="trackArtist">Late-night memories</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="prev" class="icon-btn" aria-label="Previous track">⏮</button>
+        <button id="play" class="play-btn" aria-label="Play">▶</button>
+        <button id="next" class="icon-btn" aria-label="Next track">⏭</button>
+      </div>
+
+      <div class="progress-wrap">
+        <span id="currentTime">0:00</span>
+        <input id="progress" type="range" min="0" max="100" value="0" aria-label="Track progress" />
+        <span id="duration">0:00</span>
+      </div>
+    </section>
+
+   <aside class="creator">
+  <div>
+    <span>Created by</span>
+
+    <a 
+      href="https://www.instagram.com/bytzbinary/" 
+      target="_blank" 
+      rel="noopener"
+      class="creator-name"
+    >
+      Aviii
+    </a>
+  </div>
+
+  <!-- <a 
+    href="https://www.instagram.com/bytzbinary/" 
+    target="_blank" 
+    rel="noopener"
+    class="instagram-link"
+  >
+    Get me on Instagram ↗
+  </a> -->
+</aside>
+
+    <button class="wine-fab" id="supportBtn" aria-label="Buy me a bottle of wine">
+      <span class="bottle">🍷</span>
+      <span>Buy me a bottle</span>
+    </button>
+
+    <div class="support-modal" id="supportModal" aria-hidden="true">
+      <div class="support-card">
+        <button class="close-modal" id="closeSupport" aria-label="Close">×</button>
+        <div class="support-icon">🍷</div>
+        <p class="support-kicker">IF YOU LIKE THE VIBE</p>
+        <h2>Buy <em>Aviii</em> a bottle.</h2>
+        <p class="support-copy">A small tip to keep the music, memories and late nights alive.</p>
+        <div class="tip-grid">
+          <button class="tip" data-amount="99">₹99</button>
+          <button class="tip active" data-amount="199">₹199</button>
+          <button class="tip" data-amount="499">₹499</button>
+          <button class="tip" data-amount="999">₹999</button>
+        </div>
+        <a class="pay-btn" id="payLink" href="#" target="_blank" rel="noopener">Pay ₹199 <span>↗</span></a>
+       <div class="qr-section" id="qrSection">
+
+  <div class="qr-inner">
+
+    <div class="qr-box">
+      <img
+        id="upiQr"
+        alt="Scan QR code to pay"
+      >
+    </div>
+
+    <p class="qr-status">
+      SCAN TO PAY · EXPIRES IN
+      <span id="qrTimer">02:00</span>
+    </p>
+
+  </div>
+
+</div>
+        <!-- <small>Secure payment link — configure your UPI or payment provider in <code>app.js</code></small> -->
+      </div>
+    </div>
+
+    <footer>Alone, but not without music.</footer>
+  </main>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
