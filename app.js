@@ -16,20 +16,107 @@
 //midnight-memories/gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3
 const playlist = [
   "gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3",
-  "ghazal/Song 2.mp3",
-  "ghazal/Song 3.mp3"
+  "gajal/Rafta-Rafta-Wo-Meri-Muham.mp3",
+"gajal/Lyrical-Aaoge-Jab-Tum-Jab.mp3",
+"gajal/Tere-Bina-Full-Video-A-R.mp3",
+"gajal/Rahat-Fateh-Ali-Khan-Zaro.mp3",
+"gajal/Saiyyan-Kailash-Kher-Pare.mp3",
+"gajal/Andaaz-e-Karam-Official-V.mp3",
+"gajal/Ishq-Official-Lyrical-Vid.mp3",
+"gajal/Lag-Ja-Gale-Abhi-Na-Jao-C.mp3",
+"gajal/Rafta-Rafta-Woh-Meri-Muha.mp3",
+"gajal/Ishq-Sufiyana-Lyrical-The.mp3",
+"gajal/The-Sufi-Mashup-The-Bomba.mp3",
+"gajal/Hoshwalon-Ko-Khabar-Kya-A.mp3",
+"gajal/Deewaana-Deewaana-Full-Vi.mp3",
+"gajal/Zindagi-Ke-Safar-Mein-V4U.mp3",
+"gajal/Phir-Le-Aya-Dil-Lyrical-V.mp3",
+"gajal/Yeh-Dil-Tum-Bin-Cover-Bha.mp3",
+"gajal/Kalank-Title-Track-Lyrica.mp3",
+"gajal/Anuv-Jain-JO-TUM-MERE-HO.mp3",
+"gajal/Piya-Ghar-Aavenge-Lyrical.mp3",
+"gajal/Luka-Chuppi-Lyrical-Song.mp3",
+"gajal/Koi-Fariyaad-Pratibha-Sin.mp3",
+"gajal/Chamakte-Chand-Ko-Lyrical.mp3",
+"gajal/Dard-Bhari-Ghazal-2021-Hu.mp3",
+"gajal/Lyrical-Tu-Meri-Zindagi-H.mp3",
+"gajal/Ek-Taraf-Uska-Ghar.mp3",
+"gajal/Us-Mod-Se-Shuroo-Karen-Th.mp3",
+"gajal/Ustad-Ghulam-Alis-Hit-Gha.mp3",
+"gajal/Ghulam-Ali-Ghazals-Humko.mp3",
+"gajal/Apni-Dhun-Mein-Rehta-Hoon.mp3",
+"gajal/Din-Kuch-Aise-Guzarta-Hai.mp3",
+"gajal/Superhit-Gazal-Khamosh-La.mp3",
+"gajal/Tere-Aane-Ki-Jab-Khabar-M.mp3",
+"gajal/Agar-Hum-Kahen-Aur-Woh-Mu.mp3",
+"gajal/Tamanna-Phir-Machal-Jaaye.mp3",
+"gajal/Jagjit-Singh-Pyaar-Ka-Peh.mp3",
+"gajal/Tere-liye-Song-with-Lyric.mp3",
+"gajal/Andaaz-e-Karam-Official-2.mp3",
+"gajal/Anuv-Jain-JO-TUM-MERE-H-2.mp3",
+"gajal/Apni-Dhun-Mein-Rehta-Ho-2.mp3",
+"gajal/Chamakte-Chand-Ko-Lyric-2.mp3",
+"gajal/Dard-Bhari-Ghazal-2021-2.mp3",
+"gajal/Deewaana-Deewaana-Full-2.mp3",
+"gajal/Din-Kuch-Aise-Guzarta-H-2.mp3",
+"gajal/Ek-Taraf-Uska-Ghar-2.mp3",
+"gajal/Ghulam-Ali-Ghazals-Humk-2.mp3",
+"gajal/Hoshwalon-Ko-Khabar-Kya-2.mp3",
+"gajal/Ishq-Official-Lyrical-V-2.mp3",
+"gajal/Ishq-Sufiyana-Lyrical-T-2.mp3",
+"gajal/Kalank-Title-Track-Lyri-2.mp3",
+"gajal/Koi-Fariyaad-Pratibha-S-2.mp3",
+"gajal/Lag-Ja-Gale-Abhi-Na-Jao-2.mp3",
+"gajal/Luka-Chuppi-Lyrical-Son-2.mp3",
+"gajal/Lyrical-Aaoge-Jab-Tum-J-2.mp3",
+"gajal/Lyrical-Tu-Meri-Zindagi-2.mp3",
+"gajal/Phir-Le-Aya-Dil-Lyrical-2.mp3",
+"gajal/Piya-Ghar-Aavenge-Lyric-2.mp3",
+"gajal/Rafta-Rafta-Wo-Meri-Muh-2.mp3",
+"gajal/Rafta-Rafta-Woh-Meri-Mu-2.mp3",
+"gajal/Rahat-Fateh-Ali-Khan-Za-2.mp3",
+"gajal/Saiyyan-Kailash-Kher-Pa-2.mp3",
+"gajal/Superhit-Gazal-Khamosh-2.mp3",
+"gajal/Tamanna-Phir-Machal-Jaa-2.mp3",
+"gajal/Tere-Aane-Ki-Jab-Khabar-2.mp3",
+"gajal/Tere-Bina-Full-Video-A-2.mp3",
+"gajal/Tere-liye-Song-with-Lyr-2.mp3",
+"gajal/The-Sufi-Mashup-The-Bom-2.mp3",
+"gajal/Us-Mod-Se-Shuroo-Karen-2.mp3",
+"gajal/Ustad-Ghulam-Alis-Hit-G-2.mp3",
+"gajal/Yeh-Dil-Tum-Bin-Cover-B-2.mp3",
+"gajal/Zindagi-Ke-Safar-Mein-V-2.mp3"
+
 ];
 
-
-/* =========================================
-   AUDIO PLAYER
-========================================= */
+// const playlist = [
+//   "gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3",
+//   "ghazal/Agar-Hum-Kahen-Aur-Woh-Mu.mp3",
+//   "gajal/Andaaz-e-Karam-Official-2.mp3",
+//   "gajal/Andaaz-e-Karam-Official-2.mp3"
+ 
+// ];
 
 let current = 0;
 let isSeeking = false;
 
 
-/* Create audio element */
+/* =========================================
+   RANDOM FIRST SONG
+========================================= */
+
+function getRandomTrack() {
+
+  return Math.floor(
+    Math.random() * playlist.length
+  );
+
+}
+
+
+/* =========================================
+   AUDIO
+========================================= */
 
 const audio = new Audio();
 
@@ -40,7 +127,8 @@ audio.preload = "metadata";
    ELEMENTS
 ========================================= */
 
-const $ = (id) => document.getElementById(id);
+const $ = (id) =>
+  document.getElementById(id);
 
 const playBtn = $("play");
 const prevBtn = $("prev");
@@ -56,7 +144,7 @@ const duration = $("duration");
 
 
 /* =========================================
-   GET SONG NAME FROM FILE
+   GET SONG NAME
 ========================================= */
 
 function getSongName(path) {
@@ -80,7 +168,8 @@ function loadTrack(index, autoplay = false) {
     (index + playlist.length) %
     playlist.length;
 
-  const songPath = playlist[current];
+  const songPath =
+    playlist[current];
 
   audio.src = songPath;
 
@@ -92,11 +181,14 @@ function loadTrack(index, autoplay = false) {
 
   progress.value = 0;
 
-  currentTime.textContent = "0:00";
+  currentTime.textContent =
+    "0:00";
 
-  duration.textContent = "0:00";
+  duration.textContent =
+    "0:00";
 
   audio.load();
+
 
   if (autoplay) {
 
@@ -129,7 +221,15 @@ function togglePlay() {
 
   if (audio.paused) {
 
-    audio.play();
+    audio.play()
+      .catch(error => {
+
+        console.log(
+          "Playback failed:",
+          error
+        );
+
+      });
 
   } else {
 
@@ -175,7 +275,7 @@ audio.addEventListener(
 
 
 /* =========================================
-   NEXT / PREVIOUS
+   NEXT TRACK
 ========================================= */
 
 function nextTrack() {
@@ -188,11 +288,15 @@ function nextTrack() {
 }
 
 
+/* =========================================
+   PREVIOUS TRACK
+========================================= */
+
 function prevTrack() {
 
   /*
-    If more than 3 seconds into song,
-    restart current song.
+    If more than 3 seconds into
+    the song, restart it.
   */
 
   if (audio.currentTime > 3) {
@@ -233,8 +337,15 @@ audio.addEventListener(
   "loadedmetadata",
   () => {
 
-    duration.textContent =
-      formatTime(audio.duration);
+    if (
+      audio.duration &&
+      isFinite(audio.duration)
+    ) {
+
+      duration.textContent =
+        formatTime(audio.duration);
+
+    }
 
   }
 );
@@ -248,23 +359,35 @@ audio.addEventListener(
   "timeupdate",
   () => {
 
-    if (isSeeking) return;
+    /*
+      Don't let timeupdate
+      fight with the user's drag.
+    */
 
-    const current =
+    if (isSeeking) {
+      return;
+    }
+
+    const currentPosition =
       audio.currentTime || 0;
 
     const total =
       audio.duration || 0;
 
-    if (total > 0) {
+
+    if (
+      total > 0 &&
+      isFinite(total)
+    ) {
 
       progress.value =
-        (current / total) * 100;
+        (currentPosition / total) * 100;
 
     }
 
+
     currentTime.textContent =
-      formatTime(current);
+      formatTime(currentPosition);
 
     duration.textContent =
       formatTime(total);
@@ -272,97 +395,99 @@ audio.addEventListener(
   }
 );
 
+
 /* =========================================
-   SMOOTH CLICK / DRAG SEEK
+   PROGRESS BAR SEEK
 ========================================= */
 
-function seekToPosition(event) {
+/*
+  IMPORTANT:
 
-  const rect = progress.getBoundingClientRect();
+  Do NOT use a separate "click"
+  calculation here.
 
-  const clickX =
-    Math.max(
-      0,
-      Math.min(
-        event.clientX - rect.left,
-        rect.width
-      )
-    );
-
-  const percentage =
-    clickX / rect.width;
-
-  const total =
-    audio.duration || 0;
-
-  if (total > 0) {
-
-    audio.currentTime =
-      percentage * total;
-
-    progress.value =
-      percentage * 100;
-
-    currentTime.textContent =
-      formatTime(audio.currentTime);
-
-  }
-
-}
-
-
-/* Click anywhere on track */
-
-progress.addEventListener(
-  "click",
-  (event) => {
-
-    seekToPosition(event);
-
-  }
-);
-
-
-/* Smooth dragging */
+  The range input itself handles
+  the click position.
+*/
 
 progress.addEventListener(
   "input",
   () => {
 
-    isSeeking = true;
+    if (
+      !audio.duration ||
+      !isFinite(audio.duration)
+    ) {
 
-    const total =
-      audio.duration || 0;
-
-    if (total > 0) {
-
-      const newTime =
-        total *
-        (Number(progress.value) / 100);
-
-      currentTime.textContent =
-        formatTime(newTime);
+      return;
 
     }
+
+
+    isSeeking = true;
+
+
+    const percentage =
+      Number(progress.value) / 100;
+
+
+    const newTime =
+      audio.duration * percentage;
+
+
+    /*
+      Move the actual music
+      immediately.
+    */
+
+    audio.currentTime =
+      newTime;
+
+
+    /*
+      Update displayed time.
+    */
+
+    currentTime.textContent =
+      formatTime(newTime);
 
   }
 );
 
 
+/* =========================================
+   FINISH SEEKING
+========================================= */
+
 progress.addEventListener(
   "change",
   () => {
 
-    const total =
-      audio.duration || 0;
+    if (
+      !audio.duration ||
+      !isFinite(audio.duration)
+    ) {
 
-    if (total > 0) {
+      isSeeking = false;
 
-      audio.currentTime =
-        total *
-        (Number(progress.value) / 100);
+      return;
 
     }
+
+
+    const percentage =
+      Number(progress.value) / 100;
+
+
+    audio.currentTime =
+      audio.duration * percentage;
+
+
+    currentTime.textContent =
+      formatTime(
+        audio.currentTime
+      );
+
 
     isSeeking = false;
 
@@ -370,7 +495,9 @@ progress.addEventListener(
 );
 
 
-/* Make dragging feel smooth */
+/* =========================================
+   POINTER DOWN
+========================================= */
 
 progress.addEventListener(
   "pointerdown",
@@ -382,46 +509,86 @@ progress.addEventListener(
 );
 
 
+/* =========================================
+   POINTER UP
+========================================= */
+
 progress.addEventListener(
   "pointerup",
   () => {
 
-    const total =
-      audio.duration || 0;
+    if (
+      audio.duration &&
+      isFinite(audio.duration)
+    ) {
 
-    if (total > 0) {
+      const percentage =
+        Number(progress.value) / 100;
+
 
       audio.currentTime =
-        total *
-        (Number(progress.value) / 100);
+        audio.duration * percentage;
+
+
+      currentTime.textContent =
+        formatTime(
+          audio.currentTime
+        );
 
     }
+
 
     isSeeking = false;
 
   }
 );
+
+
+/* =========================================
+   POINTER CANCEL
+========================================= */
+
+progress.addEventListener(
+  "pointercancel",
+  () => {
+
+    isSeeking = false;
+
+  }
+);
+
+
 /* =========================================
    FORMAT TIME
 ========================================= */
 
 function formatTime(seconds) {
 
-  if (!isFinite(seconds)) {
+  if (
+    !isFinite(seconds) ||
+    seconds < 0
+  ) {
 
     return "0:00";
 
   }
 
-  seconds = Math.floor(seconds);
+
+  seconds =
+    Math.floor(seconds);
+
 
   const minutes =
-    Math.floor(seconds / 60);
+    Math.floor(
+      seconds / 60
+    );
+
 
   const remainingSeconds =
     String(
       seconds % 60
     ).padStart(2, "0");
+
 
   return `${minutes}:${remainingSeconds}`;
 
@@ -471,11 +638,15 @@ audio.addEventListener(
 
 
 /* =========================================
-   LOAD FIRST SONG
+   LOAD RANDOM SONG ON PAGE LOAD
 ========================================= */
 
-loadTrack(0);
+current =
+  getRandomTrack();
 
+loadTrack(
+  current
+);
 
 // Support / payment configuration.
 // Replace this with your own UPI deep link or a secure Razorpay/Stripe payment link.
