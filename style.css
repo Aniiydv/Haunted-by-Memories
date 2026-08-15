@@ -182,8 +182,50 @@ footer{position:absolute;z-index:2;bottom:2vh;left:50%;transform:translateX(-50%
 .instagram-link:hover { 
   color: #fff; 
 } 
-.wine-fab{position:absolute;z-index:4;left:26px;bottom:26px;display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid rgba(241,223,199,.2);border-radius:999px;background:rgba(19,12,14,.58);backdrop-filter:blur(12px);font:10px "DM Mono",monospace;letter-spacing:.08em;color:var(--cream);transition:.25s} 
-.wine-fab:hover{transform:translateY(-2px);background:rgba(85,28,34,.78);border-color:rgba(241,223,199,.38)} 
+.wine-fab{
+  position:absolute;
+  z-index:5;
+
+  left:28px;
+  top:26px;
+  bottom:auto;
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 16px;
+
+  border:1px solid rgba(241,223,199,.20);
+  border-radius:999px;
+
+  background:rgba(19,12,14,.58);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  font:10px "DM Mono", monospace;
+  letter-spacing:.08em;
+
+  color:var(--cream);
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+.wine-fab:hover{
+  transform:translateY(-2px);
+  background:rgba(85,28,34,.78);
+  border-color:rgba(241,223,199,.38);
+}
+
+.bottle{
+  font-size:18px;
+}
+/* .wine-fab{position:absolute;z-index:4;left:26px;bottom:26px;display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid rgba(241,223,199,.2);border-radius:999px;background:rgba(19,12,14,.58);backdrop-filter:blur(12px);font:10px "DM Mono",monospace;letter-spacing:.08em;color:var(--cream);transition:.25s} 
+.wine-fab:hover{transform:translateY(-2px);background:rgba(85,28,34,.78);border-color:rgba(241,223,199,.38)}  */
 .bottle{font-size:18px} 
 .support-modal{position:absolute;z-index:10;inset:0;display:grid;place-items:center;background:rgba(3,4,6,.64);backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:.25s} 
 .support-modal.show{opacity:1;pointer-events:auto} 
@@ -228,8 +270,26 @@ footer{position:absolute;z-index:2;bottom:2vh;left:50%;transform:translateX(-50%
 .qr-expired { 
   color: #d98b8b; 
 } 
-@media(max-width:600px){.creator{right:14px;top:14px}.wine-fab{left:12px;bottom:14px}.wine-fab span:last-child{display:none}} 
- 
+/* @media(max-width:600px){.creator{right:14px;top:14px}.wine-fab{left:12px;bottom:14px}.wine-fab span:last-child{display:none}} 
+  */
+@media(max-width:600px){
+
+  .creator{
+    right:14px;
+    top:14px;
+  }
+
+  .wine-fab{
+    left:12px;
+    top:14px;
+    bottom:auto;
+  }
+
+  .wine-fab span:last-child{
+    display:none;
+  }
+
+}
  
 @media (prefers-reduced-motion: reduce){ 
   .car,.street-light{animation:none!important} 

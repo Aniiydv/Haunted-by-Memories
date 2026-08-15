@@ -569,9 +569,11 @@ prevBtn.addEventListener(
 );
 
 
-/* =========================================
-   AUDIO ERROR
+/* ========================================= 
+   AUDIO ERROR — LOAD NEXT TRACK
 ========================================= */
+
+let failedTracks = new Set();
 
 audio.addEventListener(
   "error",
@@ -582,8 +584,59 @@ audio.addEventListener(
       playlist[current]
     );
 
+    // Mark this track as failed
+    failedTracks.add(current);
+
     trackArtist.textContent =
-      "Unable to load this track";
+      "Skipping unavailable track...";
+
+
+    // If all tracks have failed, stop
+    if (failedTracks.size >= playlist.length) {
+
+      trackTitle.textContent =
+        "No tracks available";
+
+      trackArtist.textContent =
+        "Unable to load any music";
+
+      playBtn.textContent = "▶";
+
+      return;
+    }
+
+
+    // Find next track that hasn't failed
+    let nextIndex =
+      (current + 1) % playlist.length;
+
+
+    while (failedTracks.has(nextIndex)) {
+
+      nextIndex =
+        (nextIndex + 1) % playlist.length;
+
+    }
+
+
+    // Load next track automatically
+    setTimeout(() => {
+
+      loadTrack(
+        nextIndex,
+        true
+      );
+
+    }, 500);
+
+  }
+);
+
+audio.addEventListener(
+  "canplay",
+  () => {
+
+    failedTracks.delete(current);
 
   }
 );
