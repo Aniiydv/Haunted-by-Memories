@@ -674,3 +674,123 @@ body.jaat-mode .mode-toggle {
     rgba(212, 162, 76, .45);
 
 }
+
+
+
+/* =========================================
+   JAAT MODE — SMOKY BACKGROUND EFFECT
+========================================= */
+
+.jaat-smoke {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Show smoke only in Jaat Mode */
+body.jaat-mode .jaat-smoke {
+  opacity: 1;
+}
+
+.smoke {
+  position: absolute;
+
+  width: 45vw;
+  height: 35vw;
+
+  min-width: 400px;
+  min-height: 300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(220, 220, 210, 0.12) 0%,
+      rgba(180, 180, 170, 0.07) 35%,
+      transparent 70%
+    );
+
+  filter: blur(45px);
+
+  mix-blend-mode: screen;
+
+  opacity: 0;
+
+  animation: smokeFloat 18s ease-in-out infinite;
+}
+
+
+/* Individual smoke positions */
+
+.smoke-1 {
+  left: -10%;
+  bottom: -20%;
+
+  animation-duration: 20s;
+}
+
+
+.smoke-2 {
+  right: -15%;
+  bottom: 5%;
+
+  animation-duration: 25s;
+  animation-delay: -8s;
+}
+
+
+.smoke-3 {
+  left: 30%;
+  top: 15%;
+
+  animation-duration: 30s;
+  animation-delay: -15s;
+}
+
+
+/* Smoke movement */
+
+@keyframes smokeFloat {
+
+  0% {
+    transform:
+      translate3d(0, 60px, 0)
+      scale(0.8)
+      rotate(0deg);
+
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.45;
+  }
+
+  50% {
+    transform:
+      translate3d(100px, -80px, 0)
+      scale(1.2)
+      rotate(15deg);
+
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform:
+      translate3d(-40px, -180px, 0)
+      scale(1.5)
+      rotate(-10deg);
+
+    opacity: 0;
+  }
+
+}
+
