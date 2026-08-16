@@ -1,7 +1,8 @@
 /* =========================================
    LOCAL GHAZAL MUSIC PLAYER
 ========================================= */
-
+const memoriesHeader = document.getElementById("mdemories");
+const jaatHeader = document.getElementById("jaat");
 /*
   Add your MP3 filenames here.
 
@@ -14,7 +15,8 @@
   Hum Bhi Hain
 */
 //midnight-memories/gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3
-const playlist = [
+
+const memoriesPlaylist = [
   
 "gajal/Tere-Aane-Ki-Jab-Khabar-2.mp3",
 "gajal/Agar-Hum-Kahen-Aur-Woh-3.mp3",
@@ -53,6 +55,20 @@ const playlist = [
 
 ];
 
+const jaatPlaylist = [
+
+  "jaat/jat Clan.mp3",
+"jaat/Dhanda Nyoliwala - Russian Bandana.mp3",
+"jaat/Ram Ram.mp3",
+"jaat/ROOTS.mp3",
+"jaat/Gypsy (Balam Thanedar).mp3",
+"jaat/Meri Family Ne Chahiye Clean Shave.mp3",
+"jaat/Bairi (Chandni Raat Mein Goli).mp3",
+"jaat/Nazra Ke Teer _ Teri Surat Dil Ne Bhagi.mp3",
+"jaat/Jaat Intro.mp3",
+"jaat/Jaat_Bagdo.mp3"  
+
+];
 // const playlist = [
 //   "gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3",
 //   "ghazal/Agar-Hum-Kahen-Aur-Woh-Mu.mp3",
@@ -61,8 +77,14 @@ const playlist = [
  
 // ];
 
+let currentMode = "memories";
+
+let playlist = memoriesPlaylist;
+
 let current = 0;
 let isSeeking = false;
+
+
 
 
 /* =========================================
@@ -665,6 +687,241 @@ loadTrack(
   current
 );
 
+/* =========================================
+   JAAT MODE SWITCH
+========================================= */
+
+const modeToggle =
+  document.getElementById("modeToggle");
+
+const modeText =
+  document.getElementById("modeText");
+
+
+function switchMode() {
+
+  /* Check if music is currently playing */
+
+  const wasPlaying =
+    !audio.paused;
+
+
+  /* Stop current song */
+
+  audio.pause();
+
+
+  // /* ===============================
+  //    SWITCH TO JAAT MODE
+  // =============================== */
+
+  // if (currentMode === "memories") {
+
+  //   currentMode = "jaat";
+
+  //   playlist = jaatPlaylist;
+
+  //   document.body.classList.add(
+  //     "jaat-mode"
+  //   );
+
+  //   modeText.textContent =
+  //     "Memories Mode";
+
+  //   modeToggle.setAttribute(
+  //     "aria-label",
+  //     "Switch to Memories Mode"
+  //   );
+
+
+  //   /* Random Jaat song */
+
+  //   current =
+  //     Math.floor(
+  //       Math.random() *
+  //       playlist.length
+  //     );
+
+
+  //   trackArtist.textContent =
+  //     "Jaat • Haryanvi Vibes";
+
+
+  // }
+  
+
+  // /* ===============================
+  //    SWITCH TO MEMORIES MODE
+  // =============================== */
+
+  // else {
+
+  //   currentMode = "memories";
+
+  //   playlist = memoriesPlaylist;
+
+  //   document.body.classList.remove(
+  //     "jaat-mode"
+  //   );
+
+  //   modeText.textContent =
+  //     "Jaat Mode";
+
+  //   modeToggle.setAttribute(
+  //     "aria-label",
+  //     "Switch to Jaat Mode"
+  //   );
+
+
+  //   /* Random Ghazal */
+
+  //   current =
+  //     Math.floor(
+  //       Math.random() *
+  //       playlist.length
+  //     );
+
+
+  //   trackArtist.textContent =
+  //     "Late-night memories";
+
+  // }
+
+/* ===============================
+   SWITCH TO JAAT MODE
+=============================== */
+
+if (currentMode === "memories") {
+
+  currentMode = "jaat";
+
+  playlist = jaatPlaylist;
+
+  document.body.classList.add(
+    "jaat-mode"
+  );
+
+
+  /* Hide Memories title */
+
+  if (memoriesHeader) {
+
+    memoriesHeader.style.display =
+      "none";
+
+  }
+
+
+  /* Show Jaat title */
+
+  if (jaatHeader) {
+
+    jaatHeader.style.display =
+      "block";
+
+  }
+
+
+  modeText.textContent =
+    "Memories Mode";
+
+  modeToggle.setAttribute(
+    "aria-label",
+    "Switch to Memories Mode"
+  );
+
+
+  /* Random Jaat song */
+
+  current =
+    Math.floor(
+      Math.random() *
+      playlist.length
+    );
+
+
+  trackArtist.textContent =
+    "Jaat • Haryanvi Vibes";
+
+}
+
+
+/* ===============================
+   SWITCH TO MEMORIES MODE
+=============================== */
+
+else {
+
+  currentMode = "memories";
+
+  playlist = memoriesPlaylist;
+
+  document.body.classList.remove(
+    "jaat-mode"
+  );
+
+
+  /* Hide Jaat title */
+
+  if (jaatHeader) {
+
+    jaatHeader.style.display =
+      "none";
+
+  }
+
+
+  /* Show Memories title */
+
+  if (memoriesHeader) {
+
+    memoriesHeader.style.display =
+      "block";
+
+  }
+
+
+  modeText.textContent =
+    "Jaat Mode";
+
+  modeToggle.setAttribute(
+    "aria-label",
+    "Switch to Jaat Mode"
+  );
+
+
+  /* Random Ghazal */
+
+  current =
+    Math.floor(
+      Math.random() *
+      playlist.length
+    );
+
+
+  trackArtist.textContent =
+    "Late-night memories";
+
+}
+  /* Reset failed tracks */
+
+  failedTracks.clear();
+
+
+  /* Load new mode's song */
+
+  loadTrack(
+    current,
+    wasPlaying
+  );
+
+}
+
+
+modeToggle?.addEventListener(
+  "click",
+  switchMode
+);
 
 // Support / payment configuration.
 // Replace this with your own UPI deep link or a secure Razorpay/Stripe payment link.
@@ -724,22 +981,37 @@ function createUPILink(amount) {
 
 /* Create QR */
 
+// function generateQR() {
+
+//   const upiLink =
+//     createUPILink(selectedAmount);
+
+//   /*
+//     QR image generated from the UPI link
+//   */
+
+//   upiQr.src =
+//     `https://api.qrserver.com/v1/create-qr-code/?` +
+//     `size=300x300&data=${encodeURIComponent(upiLink)}`;
+
+// }
+
 function generateQR() {
 
   const upiLink =
     createUPILink(selectedAmount);
 
-  /*
-    QR image generated from the UPI link
-  */
-
   upiQr.src =
-    `https://api.qrserver.com/v1/create-qr-code/?` +
-    `size=300x300&data=${encodeURIComponent(upiLink)}`;
+    "https://api.qrserver.com/v1/create-qr-code/" +
+    "?size=350x350" +
+    "&margin=10" +
+    "&format=png" +
+    "&data=" +
+    encodeURIComponent(upiLink);
+
+  upiQr.style.display = "block";
 
 }
-
-
 /* Format timer */
 
 function formatTimer(seconds) {
@@ -796,14 +1068,18 @@ function startQRTimer() {
 
 }
 
-
-/* Show QR */
-
 function showQR() {
 
   generateQR();
 
-  qrSection.classList.add("show");
+  qrSection.classList.remove("show");
+
+  // Small delay for smooth animation
+  requestAnimationFrame(() => {
+
+    qrSection.classList.add("show");
+
+  });
 
   startQRTimer();
 
@@ -862,26 +1138,13 @@ payLink?.addEventListener("click", (e) => {
     Open UPI app
   */
 
-  const isMobile =
-    /Android|iPhone|iPad|iPod/i
-      .test(navigator.userAgent);
+  payLink?.addEventListener("click", (e) => {
 
+  e.preventDefault();
 
-  if (isMobile) {
+  showQR();
 
-    window.location.href =
-      upiLink;
-
-  } else {
-
-    /*
-      Desktop:
-      Show QR code
-    */
-
-    showQR();
-
-  }
+});
 
 });
 

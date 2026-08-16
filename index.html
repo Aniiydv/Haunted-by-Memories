@@ -158,11 +158,25 @@
       <div class="street-light sl-a"></div>
       <div class="street-light sl-b"></div>
     </div>
-<header class="brand">
-      <span class="eyebrow">A quiet place for old songs</span>
-      <h1>Haunted by <em>Memories</em></h1>
-    </header>
+<header class="brand" id="mdemories">
+  <span class="eyebrow">
+    A quiet place for old songs
+  </span>
 
+  <h1>
+    Haunted by <em>Memories</em>
+  </h1>
+</header>
+
+<header class="brand" id="jaat" style="display: none;">
+  <span class="eyebrow">
+    Built with attitude
+  </span>
+
+  <h1>
+    Jaat <em>Only</em>
+  </h1>
+</header>
     <!-- Hidden YouTube player. Replace video IDs in app.js with your preferred songs. -->
     <div id="youtube-player"></div>
 
@@ -188,21 +202,32 @@
         <span id="duration">0:00</span>
       </div>
     </section>
+<aside class="creator">
 
-  <aside class="creator">
-  <div>
+  <div class="creator-info">
     <span>Created by</span>
 
     <a 
-      href="https://www.instagram.com/bytzbinary/" 
-      target="_blank" 
-      rel="noopener noreferrer"
+      href="https://www.instagram.com/bytzbinary/"  
+      target="_blank"  
+      rel="noopener noreferrer" 
       class="creator-name"
       aria-label="Follow Aviii on Instagram"
     >
       Aviii
     </a>
   </div>
+
+  <button
+    class="mode-toggle"
+    id="modeToggle"
+    aria-label="Switch to Jaat Mode"
+  >
+    <span class="mode-dot"></span>
+    <span class="mode-icon">💨</span>
+    <span id="modeText">JAAT MODE</span>
+  </button>
+
 </aside>
 
     <button class="wine-fab" id="supportBtn" aria-label="Buy me a bottle of wine">
