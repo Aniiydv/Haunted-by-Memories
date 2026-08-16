@@ -15,29 +15,41 @@
 */
 //midnight-memories/gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3
 const playlist = [
-  "gajal/Chupke-Chupke-Raat-Din-Aansoon-Bahana-Yaad-Hai.mp3",
-  "gajal/Rafta-Rafta-Wo-Meri-Muham.mp3",
-"gajal/Lyrical-Aaoge-Jab-Tum-Jab.mp3",
-"gajal/Tere-Bina-Full-Video-A-R.mp3",
-"gajal/Rahat-Fateh-Ali-Khan-Zaro.mp3",
-"gajal/Andaaz-e-Karam-Official-V.mp3",
-"gajal/Rafta-Rafta-Woh-Meri-Muha.mp3",
-"gajal/Hoshwalon-Ko-Khabar-Kya-A.mp3",
-"gajal/Koi-Fariyaad-Pratibha-Sin.mp3",
-"gajal/Ek-Taraf-Uska-Ghar.mp3",
-"gajal/Ustad-Ghulam-Alis-Hit-Gha.mp3",
-"gajal/Ghulam-Ali-Ghazals-Humko.mp3",
-"gajal/Apni-Dhun-Mein-Rehta-Hoon.mp3",
-"gajal/Din-Kuch-Aise-Guzarta-Hai.mp3",
-"gajal/Tere-Aane-Ki-Jab-Khabar-M.mp3",
-"gajal/Agar-Hum-Kahen-Aur-Woh-Mu.mp3",
-"gajal/Tamanna-Phir-Machal-Jaaye.mp3",
-"gajal/Jagjit-Singh-Pyaar-Ka-Peh.mp3",
+  
+"gajal/Tere-Aane-Ki-Jab-Khabar-2.mp3",
+"gajal/Agar-Hum-Kahen-Aur-Woh-3.mp3",
 "gajal/Andaaz-e-Karam-Official-2.mp3",
-"gajal/Ghulam-Ali-Ghazals-Humk-2.mp3",
+"gajal/Anuv-Jain-JO-TUM-MERE-H-2.mp3",
+"gajal/Apni-Dhun-Mein-Rehta-Ho-2.mp3",
+"gajal/Chamakte-Chand-Ko-Lyric-2.mp3",
+"gajal/Chupke-Chupke-Raat-Din-2.mp3",
+"gajal/Dard-Bhari-Ghazal-2021-2.mp3",
+"gajal/Deewaana-Deewaana-Full-2.mp3",
+"gajal/Din-Kuch-Aise-Guzarta-H-2.mp3",
+"gajal/Ek-Taraf-Uska-Ghar-2-2-2.mp3",
 "gajal/Hoshwalon-Ko-Khabar-Kya-2.mp3",
+"gajal/Ishq-Official-Lyrical-V-2.mp3",
+"gajal/Ishq-Sufiyana-Lyrical-T-2.mp3",
+"gajal/Jagjit-Singh-Pyaar-Ka-P-3.mp3",
+"gajal/Kalank-Title-Track-Lyri-2.mp3",
 "gajal/Koi-Fariyaad-Pratibha-S-2.mp3",
+"gajal/Lag-Ja-Gale-Abhi-Na-Jao-2.mp3",
+"gajal/Luka-Chuppi-Lyrical-Son-2.mp3",
+"gajal/Lyrical-Aaoge-Jab-Tum-J-2.mp3",
+"gajal/Lyrical-Tu-Meri-Zindagi-2.mp3",
+"gajal/Phir-Le-Aya-Dil-Lyrical-2.mp3",
+"gajal/Rafta-Rafta-Wo-Meri-Muh-2.mp3",
+"gajal/Rafta-Rafta-Woh-Meri-Mu-2.mp3",
 "gajal/Rahat-Fateh-Ali-Khan-Za-2.mp3",
+"gajal/Saiyyan-Kailash-Kher-Pa-2.mp3",
+"gajal/Superhit-Gazal-Khamosh-2.mp3",
+"gajal/Tere-liye-Song-with-Lyr-2.mp3",
+"gajal/The-Sufi-Mashup-The-Bom-2.mp3",
+"gajal/Us-Mod-Se-Shuroo-Karen-2.mp3",
+"gajal/Ustad-Ghulam-Alis-Hit-G-2.mp3",
+"gajal/Yeh-Dil-Tum-Bin-Cover-B-2.mp3",
+"gajal/Zindagi-Ke-Safar-Mein-V-2.mp3"
+
 
 ];
 
@@ -652,6 +664,7 @@ current =
 loadTrack(
   current
 );
+
 
 // Support / payment configuration.
 // Replace this with your own UPI deep link or a secure Razorpay/Stripe payment link.
