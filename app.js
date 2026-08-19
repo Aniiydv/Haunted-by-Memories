@@ -50,7 +50,8 @@ const memoriesPlaylist = [
 "gajal/Us-Mod-Se-Shuroo-Karen-2.mp3",
 "gajal/Ustad-Ghulam-Alis-Hit-G-2.mp3",
 "gajal/Yeh-Dil-Tum-Bin-Cover-B-2.mp3",
-"gajal/Zindagi-Ke-Safar-Mein-V-2.mp3"
+"gajal/Zindagi-Ke-Safar-Mein-V-2.mp3",
+"gajal/Niyat E Shauq __ Shaam E Mehfil.mp3"
 
 
 ];
